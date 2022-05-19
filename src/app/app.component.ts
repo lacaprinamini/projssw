@@ -24,9 +24,9 @@ export class AppComponent  {
 
   platea: posti;
   palchi: posti;
-
+  color: string;
   constructor(){
-
+this.color="green";
 const n = {
 filePlatea: 7,
 postiPlatea: 10,    
@@ -42,5 +42,11 @@ const teatro = {
     this.platea= new posti(teatro.platea);
     this.palchi= new posti(teatro.palchi);
   }
-  
+  change(posto: string,colore: string){   
+   colore=="green" ? this.color="red" : this.color="green";
+   
+  }
 }
+
+
+

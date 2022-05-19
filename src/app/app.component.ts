@@ -1,6 +1,18 @@
 import { Component, VERSION } from '@angular/core';
 
-
+class posti {
+  postiDisponibili: Array<any>;
+  constructor(postiDisponibili: Array<any>) {
+    let posti= [];
+    postiDisponibili.map((fila, i) => {
+        fila.map((nome, j) => {  
+          const posto="P"+(j+1)+(i+1);
+           posti.push(posto);         
+      });
+    });
+    this.postiDisponibili= posti;
+  }
+}
 
 
 @Component({
@@ -9,27 +21,26 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  platea: Array<string>;
-  
+
+  platea: posti;
+  palchi: posti;
+
   constructor(){
 
-    const nfilePlatea = 7;
-    const npostiPlatea = 10;
-    const array=[];
-    this.platea= array;
-    
-    const plateaPosti= Array(nfilePlatea).fill("").map(() => Array(npostiPlatea).fill("x"));
+const n = {
+filePlatea: 7,
+postiPlatea: 10,    
+filePalchi: 4,
+postiPalchi: 6
+}
 
-   plateaPosti.map((fila, i) => {
-      var p = fila.map((nome, j) => {
-          
-          const posto="P"+(j+1)+(i+1);
-           array.push(posto);
-           
-      });
-     
-    });
-    
+const teatro = {
+  platea: Array(n.filePlatea).fill("").map(() => Array(n.postiPlatea).fill("x")),
+  palchi: Array(n.filePalchi).fill("").map(() => Array(n.postiPalchi).fill("x")),
+};
+
+    this.platea= new posti(teatro.platea);
+    this.palchi= new posti(teatro.palchi);
   }
   
 }

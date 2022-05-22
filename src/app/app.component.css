@@ -1,3 +1,17 @@
 p {
   font-family: Lato;
 }
+button{
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  padding: 10px 13px;
+  border: solid 1px #0a0c0e;
+  margin: 0% 0% 3% 0%;
+  
+}
+ul{
+  list-style-type: none;
+}

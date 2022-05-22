@@ -1,7 +1,7 @@
 import { Component, VERSION } from '@angular/core';
 
 class posti {
-  postiDisponibili: Array<any>;
+  postiDisponibili: Array<string>;
   constructor(postiDisponibili: Array<any>) {
     let posti= [];
     postiDisponibili.map((fila, i) => {
@@ -43,6 +43,7 @@ const teatro = {
     this.palchi= new posti(teatro.palchi);
   }
   change(posto: string,colore: string){   
+   
    colore=="green" ? this.color="red" : this.color="green";
    
   }

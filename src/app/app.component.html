@@ -7,8 +7,10 @@
 <ul>
   
 <li *ngFor='let posto of platea.postiDisponibili' >  
+ 
   <button [style.color]="color" (click)="change(posto,this.color)" >{{posto}}</button>
-
+ 
+  
 </li>
 </ul>
   
@@ -16,7 +18,7 @@
 
   <ul>
     <li *ngFor='let posto of palchi.postiDisponibili' >
-      <button >{{posto}}</button>
+      <button [style.color]="color" (click)="change(posto,this.color)">{{posto}}</button>
     </li>
   </ul>
 

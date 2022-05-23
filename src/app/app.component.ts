@@ -43,18 +43,6 @@ const teatro = {
     this.platea= new posti(teatro.platea);
     this.palchi= new posti(teatro.palchi);
   }
-//   change(posto: string,colore: string){   
-  
-//    let i=0;
-//    colore=="green" ? this.color="red" : this.color="green";
-  
-//        var  trovato= this.platea.postiDisponibili.filter(
-//           el => ( el === posto )
-          
-//           );
-          
-  
-// }
 
 
 

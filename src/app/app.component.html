@@ -1,11 +1,11 @@
 <html>
 <body>
 
-
+<div>
   <p> Platea: </p>
-
-<ul>
   
+<ul>
+
 <li *ngFor='let posto of platea.postiDisponibili' >  
  
   <button [appColor]="color" >{{posto}}</button>
@@ -13,14 +13,15 @@
   
 </li>
 </ul>
-  
-<p> Palchi: </p>
+</div>
+<div>
+<p class="palchi"> Palchi: </p>
 
-  <!-- <ul>
+  <ul>
     <li *ngFor='let posto of palchi.postiDisponibili' >
-      <button [style.color]="color" (click)="change(posto,this.color)">{{posto}}</button>
+      <button [appColor]="color" >{{posto}}</button>
     </li>
-  </ul> --> -->
-  
+  </ul> 
+</div>
 </body>
 </html>

@@ -1,22 +1,16 @@
 <html>
 <body>
-
+<input id="nome">
 <div>
-  <p> Platea: </p>
-  
+  <p> Platea: </p> 
 <ul>
-
 <li *ngFor='let posto of platea.postiDisponibili' >  
- 
-  <button [appColor]="color" >{{posto}}</button>
- 
-  
+  <button [appColor]="color" (click)='imposta(posto)'>{{posto}}</button>
 </li>
 </ul>
 </div>
 <div>
-<p class="palchi"> Palchi: </p>
-
+<p > Palchi: </p>
   <ul>
     <li *ngFor='let posto of palchi.postiDisponibili' >
       <button [appColor]="color" >{{posto}}</button>

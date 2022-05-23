@@ -24,9 +24,10 @@ export class AppComponent  {
 
   platea: posti;
   palchi: posti;
-  color: string;
+  color: "";
+  
   constructor(){
-this.color="green";
+
 const n = {
 filePlatea: 7,
 postiPlatea: 10,    
@@ -42,18 +43,18 @@ const teatro = {
     this.platea= new posti(teatro.platea);
     this.palchi= new posti(teatro.palchi);
   }
-  change(posto: string,colore: string){   
+//   change(posto: string,colore: string){   
   
-   let i=0;
-   colore=="green" ? this.color="red" : this.color="green";
+//    let i=0;
+//    colore=="green" ? this.color="red" : this.color="green";
   
-       var  trovato= this.platea.postiDisponibili.filter(
-          el => ( el === posto )
+//        var  trovato= this.platea.postiDisponibili.filter(
+//           el => ( el === posto )
           
-          );
+//           );
           
   
-}
+// }
 
 
 

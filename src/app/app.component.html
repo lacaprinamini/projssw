@@ -1,21 +1,21 @@
 <html>
-<body>
-<input id="nome">
-<div>
-  <p> Platea: </p> 
-<ul>
-<li *ngFor='let posto of platea.postiDisponibili' >  
-  <button [appColor]="color" (click)='imposta(posto)'>{{posto}}</button>
-</li>
-</ul>
-</div>
-<div>
-<p > Palchi: </p>
-  <ul>
-    <li *ngFor='let posto of palchi.postiDisponibili' >
-      <button [appColor]="color" >{{posto}}</button>
-    </li>
-  </ul> 
-</div>
-</body>
+  <body>
+    <input id="nome" />
+    <div>
+      <p>Platea:</p>
+      <ul>
+        <li *ngFor="let key of postiPlatea">
+          <button [appColor]="color" (click)="imposta(key,postiPlatea)">{{ key }}</button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p>Palchi:</p>
+      <ul>
+        <li *ngFor="let key of postiPalchi">
+          <button [appColor]="color" (click)="imposta(key,postiPalchi)">{{ key }}</button>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>

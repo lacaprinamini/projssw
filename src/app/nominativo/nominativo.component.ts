@@ -12,6 +12,8 @@ export class NominativoComponent {
  
   onEnter(value: string) {
     this.nominativo = value;
+ 
+
   }
 
 }

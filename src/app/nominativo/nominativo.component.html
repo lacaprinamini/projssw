@@ -1,4 +1,7 @@
 
+<div *ngIf = " nominativo == undefined ">
 <p *ngIf = "chiave !== undefined"> Inserisci il nome:
   
 <input #nominativo (keyup.enter)="onEnter(nominativo.value)"></p>
+</div>
+<app-posti [nominativo]="nominativo"> </app-posti>

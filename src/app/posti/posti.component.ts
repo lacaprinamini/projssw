@@ -1,5 +1,5 @@
 
-import { Component, VERSION } from '@angular/core';
+import { Component, VERSION, Input } from '@angular/core';
 
 class posti {
   postiDisponibili: Array<string>;
@@ -28,6 +28,7 @@ export class PostiComponent  {
   platea: posti;
   palchi: posti;
   color: "";
+  @Input() nominativo:string;
   constructor() { 
   const n = {
     filePlatea: 7,

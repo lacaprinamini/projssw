@@ -2,7 +2,8 @@
 <body>
   <p > Inserisci la chiave del teatro: </p>
   <input #box (keyup.enter)="onEnter(box.value)">
-  <p>{{value}}</p>
 `
+<app-nominativo [chiave]="chiave"> </app-nominativo>
+
 </body>
 </html>

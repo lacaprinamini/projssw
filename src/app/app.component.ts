@@ -8,8 +8,10 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  value = '';
+  chiave: string;
   constructor(){}
  
-  onEnter(value: string) { this.value = value; }
-}
+  onEnter(value: string) { 
+    this.chiave = value; 
+  }
+  }

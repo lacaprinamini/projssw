@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nominativo',
   templateUrl: './nominativo.component.html',
   styleUrls: ['./nominativo.component.css']
 })
-export class NominativoComponent implements OnInit {
-
+export class NominativoComponent {
+  @Input() chiave: string;
+  nominativo: string;
   constructor() { }
-
-  ngOnInit() {
-  }
+  onEnter(value: string) { 
+    this.nominativo = value; }
 
 }

@@ -1,21 +1,8 @@
 <html>
-  <body>
-    <input id="nome" />
-    <div>
-      <p>Platea:</p>
-      <ul>
-        <li *ngFor="let key of postiPlatea">
-          <button [appColor]="color" (click)="imposta(key,postiPlatea)">{{ key }}</button>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <p>Palchi:</p>
-      <ul>
-        <li *ngFor="let key of postiPalchi">
-          <button [appColor]="color" (click)="imposta(key,postiPalchi)">{{ key }}</button>
-        </li>
-      </ul>
-    </div>
-  </body>
+<body>
+  <p > Inserisci la chiave del teatro: </p>
+  <input #box (keyup.enter)="onEnter(box.value)">
+  <p>{{value}}</p>
+`
+</body>
 </html>

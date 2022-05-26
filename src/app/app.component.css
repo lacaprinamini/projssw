@@ -1,29 +1,7 @@
 p {
   font-family: Lato;
 }
-button{
-  outline: none;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  font: bold 12px Arial, Helvetica, sans-serif;
-  padding: 10px 13px;
-  border: solid 1px #0a0c0e;
-  color: green
-  
-}
-ul{
-  list-style: none;
- margin:0;
- padding:0
-}
-ul li{
-  display: block;
-  margin:5% 0% 5% 5%;
-  float: left
-}
-
-div{
-  margin-top: 2%;
-  margin-bottom: 4%
+input{
+  border: 2px solid black;
+  padding: 2%
 }

@@ -1,6 +1,7 @@
 <html>
 <body>
-  <p *ngIf = "chiave == undefined" > Inserisci la chiave del teatro: 
+  
+  <p *ngIf = "chiave == undefined" > Inserisci la chiave:
   <input #box (keyup.enter)="onEnter(box.value)">
 `</p>
 <app-nominativo [chiave]="chiave"> </app-nominativo>

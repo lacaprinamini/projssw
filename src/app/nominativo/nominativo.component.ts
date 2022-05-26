@@ -9,7 +9,9 @@ export class NominativoComponent {
   @Input() chiave: string;
   nominativo: string;
   constructor() { }
-  onEnter(value: string) { 
-    this.nominativo = value; }
+ 
+  onEnter(value: string) {
+    this.nominativo = value;
+  }
 
 }

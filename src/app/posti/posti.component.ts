@@ -28,13 +28,13 @@ export class PostiComponent  {
   platea: posti;
   palchi: posti;
   color: "";
-  @Input() dati:Array<string>;
+  
+  @Input() dati:string[];
   nominativo: string;
   chiave: string;
   constructor() {
-    // this.chiave=this.dati[0] ;
-    // this.nominativo=this.dati[1];
-    console.log(this.dati)
+    
+  console.log(this.dati)
 
   const n = {
     filePlatea: 7,
@@ -52,7 +52,6 @@ export class PostiComponent  {
         this.platea= new posti(teatro.platea, nomiPlatea);
         this.palchi= new posti(teatro.palchi, nomiPalchi);
         
-        console.log(this.platea.postiDisponibili.length, this.platea.nomi.length)
       }
         imposta(posto: string){   
       console.log("Prenotato a " + this.nominativo +" al posto " + posto);

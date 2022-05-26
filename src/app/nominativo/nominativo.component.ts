@@ -8,13 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NominativoComponent {
   @Input() chiave: string;
   nominativo: string;
-  dati: Array<string>;
+  dati: string[];
   constructor() { }
  
   onEnter(value: string) {
     this.nominativo=value;
     this.dati = [this.chiave, this.nominativo];
- 
+    console.log(this.dati)
 
   }
 

@@ -14,7 +14,7 @@ export class NominativoComponent {
   onEnter(value: string) {
     this.nominativo=value;
     this.dati = [this.chiave, this.nominativo];
-    console.log(this.dati)
+   
 
   }
 

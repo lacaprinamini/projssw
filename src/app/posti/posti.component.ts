@@ -34,7 +34,6 @@ export class PostiComponent  {
   chiave: string;
   constructor() {
     
-  console.log(this.dati)
 
   const n = {
     filePlatea: 7,
@@ -54,8 +53,8 @@ export class PostiComponent  {
         
       }
         imposta(posto: string){   
-      console.log("Prenotato a " + this.nominativo +" al posto " + posto);
-      console.log(this.chiave)
+      console.log("Prenotato a " + this.dati[1] +" al posto " + posto);
+      console.log(this.dati[0])
        
         }
            

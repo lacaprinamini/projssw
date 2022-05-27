@@ -9,9 +9,13 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   chiave: string;
+  dati: string[];
   constructor(){}
  
   onEnter(value: string) { 
     this.chiave = value; 
+  }
+  riceviDati($event) {
+    this.dati= $event;
   }
   }

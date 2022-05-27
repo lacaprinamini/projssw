@@ -5,6 +5,6 @@
   <input #box (keyup.enter)="onEnter(box.value)">
 `</p>
 <app-nominativo [chiave]="chiave"> </app-nominativo>
-
+<app-posti [dati]="dati" (titleEvent)="riceviDati($event)"> </app-posti>
 </body>
 </html>

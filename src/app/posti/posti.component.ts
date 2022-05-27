@@ -53,7 +53,7 @@ export class PostiComponent  {
         
       }
         imposta(posto: string){   
-      console.log("Prenotato a " + this.dati[1] +" al posto " + posto);
+      console.log("Prenotato a " + this.dati[1] +" il posto " + posto);
       console.log(this.dati[0])
        
         }
